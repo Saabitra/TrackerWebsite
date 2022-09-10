@@ -127,21 +127,25 @@ section {
   background-image: url('../img/yusuf-evli-o4EfTOEkKAw-unsplash.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
 }
 .section-b {
   background-image: url('../img/mahmoud-sulaiman-aO9nGw9Cbk0-unsplash.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
 }
 .section-c {
   background-image: url('../img/mike-newbry-DwtX9mMHBJ0-unsplash.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
 }
 .section-d {
   background-image: url('../img/justin-wilkens-MkRmRURW0nc-unsplash.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
 }
 .section-e {
   background-image: url('../img/oleksandr-sushko-dDy07Wmz0_U-unsplash.jpg');
@@ -152,6 +156,7 @@ section {
   background-image: url('../img/marc-szeglat-IzoQu5vH47o-unsplash.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .btn {
