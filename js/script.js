@@ -7,6 +7,8 @@ let scrollStarted = false;
 btn.addEventListener('click', navToggle);
 document.addEventListener('scroll', scrollPage);
 
+var video = document.getElementById('myVideo');
+
 function navToggle() {
   btn.classList.toggle('open');
   overlay.classList.toggle('overlay-show');
@@ -57,3 +59,4 @@ function countUp() {
 function reset() {
   counters.forEach((counter) => (counter.innerHTML = '0'));
 }
+
