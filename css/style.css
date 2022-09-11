@@ -25,7 +25,7 @@ ul {
 
 /* Header/Navbar */
 .main-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,6 +43,8 @@ ul {
 .logo {
   width: 210px;
   height: auto;
+  padding-right: 35px;
+  left: 10px;
 }
 
 .logo img {
@@ -246,15 +248,22 @@ footer ul li a:hover {
 
 /* Hamburger Menu */
 .hamburger {
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 43px;
   right: 25px;
-  z-index: 10;
+  z-index: 55;
   cursor: pointer;
   width: 20px;
   height: 20px;
   background: none;
   border: none;
+  transition: opacity 0.2s linear 0.1s;
+}
+
+.hamburger:active,
+.hamburger:focus {
+  outline: none;
 }
 
 .hamburger-top,
@@ -266,6 +275,8 @@ footer ul li a:hover {
   top: 0;
   left: 0;
   background: #fff;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
   transition: all 0.5s;
 }
 
@@ -279,10 +290,12 @@ footer ul li a:hover {
 
 /* Transition hamburger to X when open */
 .open {
+  position: fixed;
   transform: rotate(90deg);
 }
 
 .open .hamburger-top {
+  position: fixed;
   transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
@@ -291,6 +304,7 @@ footer ul li a:hover {
 }
 
 .open .hamburger-bottom {
+  position: fixed;
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
@@ -303,6 +317,7 @@ footer ul li a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+  animation: fadeIn 0.7s ease-in-out;
 }
 
 /* Stop body scroll */
