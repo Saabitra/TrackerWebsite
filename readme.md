@@ -1,8 +1,10 @@
 # TrackerWebsite
 
-This website helps us to track various natural calamities happening around the globe, all in one place just tap and find any natural calamities.
+![Untitled-1](https://user-images.githubusercontent.com/63924604/189534145-9864697c-7c6e-44e9-bcc4-811debf268d4.png)
 
-![LandingPage](https://user-images.githubusercontent.com/63924604/189479850-2835853a-9e31-4e62-b9a9-673a47762ce6.png)
+## **This website helps us to track various natural calamities happening around the globe, all in one place just tap and find any natural calamities. You can also call for help in out helpline number given in the website, also find emergency centres near you.**
+
+![Screenshot 2022-09-11 201830](https://user-images.githubusercontent.com/63924604/189534103-6cd57f6e-0aec-4a10-b149-c91d489a3239.png)
 
 ## Description
 
