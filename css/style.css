@@ -25,7 +25,7 @@ ul {
 
 /* Header/Navbar */
 .main-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,6 +36,7 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 /* Logo */
@@ -52,7 +53,7 @@ ul {
 
 /* Desktop Menu */
 .desktop-main-menu {
-  margin-right: 50px;
+  padding-right: 57vh;
 }
 
 .desktop-main-menu ul {
@@ -210,7 +211,7 @@ section {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  animation: fadeBounce 5s infinite;
+  animation: fadeBounce 4s infinite;
 }
 
 /* Footer */
@@ -245,9 +246,9 @@ footer ul li a:hover {
 
 /* Hamburger Menu */
 .hamburger {
-  position: fixed;
-  top: 40px;
-  right: 20px;
+  position: absolute;
+  top: 43px;
+  right: 25px;
   z-index: 10;
   cursor: pointer;
   width: 20px;
