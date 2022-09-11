@@ -321,9 +321,7 @@ footer ul li a:hover {
 }
 
 /* Stop body scroll */
-.stop-scrolling {
-  overflow: hidden;
-}
+/*.stop-scrolling {overflow: hidden;}*/
 
 /* Hide mobile main menu items */
 .mobile-only {
