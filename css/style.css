@@ -129,36 +129,36 @@ section {
 
 /* Background images */
 .section-a {
-  background-image: url('../img/yusuf-evli-o4EfTOEkKAw-unsplash.jpg');
+  background-image: url('../img/storms_1_4k.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-b {
-  background-image: url('../img/mahmoud-sulaiman-aO9nGw9Cbk0-unsplash.jpg');
+  background-image: url('../img/earthquake_1_4k.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-c {
-  background-image: url('../img/mike-newbry-DwtX9mMHBJ0-unsplash.jpg');
+  background-image: url('../img/wildfire_1_4k.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-d {
-  background-image: url('../img/justin-wilkens-MkRmRURW0nc-unsplash.jpg');
+  background-image: url('../img/floods_1_4k.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-e {
-  background-image: url('../img/oleksandr-sushko-dDy07Wmz0_U-unsplash.jpg');
+  background-image: url('../img/droughts_1_4k.jpg');
   width: 100%;
   height: 100vh;
 }
 .section-f {
-  background-image: url('../img/marc-szeglat-IzoQu5vH47o-unsplash.jpg');
+  background-image: url('../img/volcanoes_1_4k.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
@@ -376,27 +376,27 @@ footer ul li a:hover {
 
 /* Inner Pages */
 .bg-storms {
-  background-image: url('../img/nikolas-noonan-n_3kdpSkrJo-unsplash.jpg');
+  background-image: url('../img/storms_2_4k.jpg');
 }
 
 .bg-earthquakes {
-  background-image: url('../img/jose-antonio-gallego-vazquez-q5DNjRaAJo4-unsplash.jpg');
+  background-image: url('../img/earthquake_2_4k.jpg');
 }
 
 .bg-wildfires {
-  background-image: url('../img/landon-parenteau-QDFbLwy0hMY-unsplash.jpg');
+  background-image: url('../img/wildfire_2_4k.jpg');
 }
 
 .bg-floods {
-  background-image: url('../img/joshua-j-cotten-eaJZqCn1cU8-unsplash.jpg');
+  background-image: url('../img/floods_2_4k.jpg');
 }
 
 .bg-droughts {
-  background-image: url('../img/rishabh-mathew-wB5__7GaZgk-unsplash.jpg');
+  background-image: url('../img/drought_2_4k.jpg');
 }
 
 .bg-volcanoes {
-  background-image: url('../img/asa-steinarsdottir-_xmAPHUXXiU-unsplash.jpg');
+  background-image: url('../img/volcanoes_2_4k.jpg');
 }
 
 .section-animate {
