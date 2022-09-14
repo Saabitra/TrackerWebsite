@@ -41,6 +41,7 @@ ul {
 
 /* Logo */
 .logo {
+  position: relative;
   width: 210px;
   height: auto;
   padding-right: 35px;
@@ -129,7 +130,7 @@ section {
 
 /* Background images */
 .section-a {
-  background-image: url('../img/storms_1_4k.jpg');
+  background-image: url('../img/medium_imgs/storm_1.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
@@ -141,24 +142,24 @@ section {
   animation: fadeIn 2s ease-in-out;
 }
 .section-c {
-  background-image: url('../img/wildfire_1_4k.jpg');
+  background-image: url('../img/medium_imgs/wildfire_1.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-d {
-  background-image: url('../img/floods_1_4k.jpg');
+  background-image: url('../img/medium_imgs/floods_1.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
 }
 .section-e {
-  background-image: url('../img/droughts_1_4k.jpg');
+  background-image: url('../img/medium_imgs/droughts_1.jpg');
   width: 100%;
   height: 100vh;
 }
 .section-f {
-  background-image: url('../img/volcanoes_1_4k.jpg');
+  background-image: url('../img/medium_imgs/volcanoes_1.jpg');
   width: 100%;
   height: 100vh;
   animation: fadeIn 2s ease-in-out;
@@ -376,27 +377,27 @@ footer ul li a:hover {
 
 /* Inner Pages */
 .bg-storms {
-  background-image: url('../img/storms_2_4k.jpg');
+  background-image: url('../img/medium_imgs/storm_2.jpg');
 }
 
 .bg-earthquakes {
-  background-image: url('../img/earthquake_2_4k.jpg');
+  background-image: url('../img/medium_imgs/earthquake_2.jpg');
 }
 
 .bg-wildfires {
-  background-image: url('../img/wildfire_2_4k.jpg');
+  background-image: url('../img/medium_imgs/wildfire_2.jpg');
 }
 
 .bg-floods {
-  background-image: url('../img/floods_2_4k.jpg');
+  background-image: url('../img/medium_imgs/floods_2.jpg');
 }
 
 .bg-droughts {
-  background-image: url('../img/droughts_2_4k.jpg');
+  background-image: url('../img/medium_imgs/droughts_2.jpg');
 }
 
 .bg-volcanoes {
-  background-image: url('../img/volcanoes_2_4k.jpg');
+  background-image: url('../img/medium_imgs/volcanoes_2.jpg');
 }
 
 .section-animate {
