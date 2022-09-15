@@ -36,7 +36,7 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.2s ease-in-out;
 }
 
 /* Logo */
@@ -133,36 +133,37 @@ section {
   background-image: url('../img/medium_imgs/storm_1.jpg');
   width: 100%;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .section-b {
   background-image: url('../img/earthquake_1_4k.jpg');
   width: 100%;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .section-c {
   background-image: url('../img/medium_imgs/wildfire_1.jpg');
   width: 100%;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .section-d {
   background-image: url('../img/medium_imgs/floods_1.jpg');
   width: 100%;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .section-e {
   background-image: url('../img/medium_imgs/droughts_1.jpg');
   width: 100%;
   height: 100vh;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .section-f {
   background-image: url('../img/medium_imgs/volcanoes_1.jpg');
   width: 100%;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .btn {
@@ -257,6 +258,7 @@ footer ul li a:hover {
   background: none;
   border: none;
   transition: opacity 0.2s linear 0.1s;
+  animation: fadeIn 0.2s ease-in-out;
 }
 
 .hamburger:active,
@@ -401,7 +403,7 @@ footer ul li a:hover {
 }
 
 .section-animate {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .section-inner-center {
@@ -526,8 +528,18 @@ footer ul li a:hover {
   }
 
   .logo {
+    top: -13px;
+    padding-left: 10px;
+    left: 10px;
     width: 150px;
     margin: auto;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 32px;
+    right: 10px;
   }
 
   .section-inner-center h3 {
