@@ -8,6 +8,7 @@
     <script src="js/script.js" defer></script>
     <title>DailyTracker</title>
     <link rel="icon" type="image/x-icon" href="../TrackerWebsite/img/TrackerLogo.png">
+    
     <style>
       #map {
         height: 720px;
@@ -82,19 +83,7 @@
     <section class="section-animate">
     
     <div id="map"></div>
-    <script>
-      function initMap(){
-        var options ={
-          zoom: 8,
-          center: {lat: 28.7041, lng: 77.1025}
-        }
-
-        var map = new google.maps.Map(document.getElementById('map'), options);
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG4-EqQJ4rtfkchyMA7LMjm-yVhdbeA0I&callback=initMap">
-    </script>
+    <script type="text/javascript" src='js/maps.js'></script>
     </section>
 
     <footer>
