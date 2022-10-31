@@ -83,6 +83,14 @@
     
       <div id="map"></div>
       <script>
+        var locations = [
+        ['loan 1', -71.93, -39.42, 'address 1'],
+        ['Bezymianny Volcano, Russia', 160.595, 55.972, 'address 2'],
+        ['Cotopaxi Volcano, Ecuador', -78.436, -0.677, 'address 3'],
+        ['Langila Volcano, Papua New Guinea', 148.42, -5.525, 'address 4'],
+        ['Kerinci Volcano, Indonesia', 101.264, 1.697, 'address 5']
+        ];
+
         function initMap(){
           var options ={
             zoom: 8,
@@ -90,7 +98,38 @@
           }
   
           var map = new google.maps.Map(document.getElementById('map'), options);
+          setMarkers(map, locations);
         }
+
+        function setMarkers(map, locations) {
+
+var marker, i
+for (i = 0; i < locations.length; i++) {
+
+    var loan = locations[i][0]
+    var lat = locations[i][1]
+    var long = locations[i][2]
+    var add = locations[i][3]
+
+    latlngset = new google.maps.LatLng(lat, long);
+
+    var marker = new google.maps.Marker({
+        map: map, title: loan, position: latlngset
+    });
+    map.setCenter(marker.getPosition())
+
+    var content = "Name: " + loan + '</h3>' + "Address: " + add
+
+    var infowindow = new google.maps.InfoWindow()
+
+   google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+return function() {
+    infowindow.setContent(content);
+    infowindow.open(map,marker);
+  };
+})(marker,content,infowindow));
+}
+}
       </script>
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG4-EqQJ4rtfkchyMA7LMjm-yVhdbeA0I&callback=initMap">
