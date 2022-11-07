@@ -168,7 +168,6 @@ div.cell {
   padding: 15px 49px;
   margin-top: 10px;
   border: 2px solid #fff;
-  font-weight: bold;
   overflow: hidden;
   z-index: 2;
 }
@@ -223,7 +222,7 @@ div.cell {
 
 .section-a-emergency {
   position: absolute;
-  background-image: url('../img/medium_imgs/storm_1.jpg');
+  background-image: url('../img/medium_imgs/ndrf-uttarakhand-e1612872155485.webp');
   width: 100%;
   height: 100vh;
   animation: fadeIn 0.5s ease-in-out;
