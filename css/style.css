@@ -101,11 +101,77 @@ section {
   text-transform: uppercase;
 }
 
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+}
+
 .section-inner {
-  position: absolute;
+  position: fixed;
   bottom: 200px;
   left: 150px;
   max-width: 560px;
+}
+
+#grid-gap {
+  /* (A1) GRID LAYOUT */
+  display: grid;
+ 
+  /* (A2) SPECIFY COLUMNS */
+  grid-template-columns: repeat(2, 400px);
+
+  /* (A3) SET SPACING BETWEEN CELLS */
+  /*grid-gap: 20px;*/
+ 
+  /* (A4) TO SET SPECIFIC ROW-COL SPACING*/
+  grid-column-gap: 1px;
+  grid-row-gap: 30px;
+}
+
+/* (B) GRID CELLS */
+div.cell {
+  top: 100px;
+  padding: 10px;
+  left: 650px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  min-height: 200px;
+  max-width: 350px;
+  padding: 15px 49px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.cell-1 {
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  max-width: 560px;
+}
+
+.cell-1 h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.cell-1 h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+.section-inner-ndrf a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
 }
 
 .section-inner h4 {
@@ -126,6 +192,15 @@ section {
 .section-inner a {
   animation: fadeInUp 0.5s ease-in-out 0.4s;
   animation-fill-mode: both;
+}
+
+.section-a-emergency {
+  position: absolute;
+  background-image: url('../img/medium_imgs/storm_1.jpg');
+  width: 100%;
+  height: 100vh;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: scroll;
 }
 
 /* Background images */
