@@ -127,15 +127,15 @@ function setMarkers(map, locations) {
 
     <div class="stats">
       <div>
-        <span class="counter" data-target="3">0</span>
+        <span class="counter" data-target="27">0</span>
         <h4>Houses Damaged</h4>
       </div>
       <div>
-        <span class="counter" data-target="7">0</span>
+        <span class="counter" data-target="976">0</span>
         <h4>People Displaced</h4>
       </div>
       <div>
-        <span class="counter" data-target="4">0</span>
+        <span class="counter" data-target="12">0</span>
         <h4>People Died</h4>
       </div>
     </div>
@@ -144,7 +144,60 @@ function setMarkers(map, locations) {
     <section class="section-animate">
     
     <div id="map"></div>
-    
+    <script>
+        var locations = [
+        ['Jurm', 37.019, 71.146, 'Afghanistan', '5.4'],
+        ['Babuyan Islands', 19.031, 121.192, 'Philippines', '5.2'],
+        ['Tobelo', 1.920, 128.846, 'Indonesia', '4.9'],
+        ['Vilyuchinsk', 52.128, 159.590, 'Russia', '5.0'],
+        ['Itoman', 25.319, 128.631, 'Japan', '4.7']
+        ];
+
+        function initMap(){
+          var options ={
+            zoom: 2.5,
+            center: {lat: 37.019, lng: 71.146}
+          }
+  
+          var map = new google.maps.Map(document.getElementById('map'), options);
+          setMarkers(map, locations);
+        }
+
+        function setMarkers(map, locations) {
+
+var marker, i
+for (i = 0; i < locations.length; i++) {
+
+    var loan = locations[i][0]
+    var lat = locations[i][1]
+    var long = locations[i][2]
+    var add = locations[i][3]
+    var mag = locations[i][4]
+
+    latlngset = new google.maps.LatLng(lat, long);
+
+    var marker = new google.maps.Marker({
+        map: map, title: loan, position: latlngset
+    });
+    map.setCenter(marker.getPosition())
+
+    var content = "Name: " + loan + '</h3>' + " Magnitude: " + mag + " Location: " + add
+
+    var infowindow = new google.maps.InfoWindow()
+
+   google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+return function() {
+    infowindow.setContent(content);
+    infowindow.open(map,marker);
+  };
+})(marker,content,infowindow));
+}
+}
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG4-EqQJ4rtfkchyMA7LMjm-yVhdbeA0I&callback=initMap">
+      </script>
+      </section>
     </section>
 
     <footer>

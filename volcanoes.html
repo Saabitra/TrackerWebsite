@@ -65,15 +65,15 @@
 
     <div class="stats">
       <div>
-        <span class="counter" data-target="3">0</span>
+        <span class="counter" data-target="27">0</span>
         <h4>Houses Damaged</h4>
       </div>
       <div>
-        <span class="counter" data-target="7">0</span>
+        <span class="counter" data-target="976">0</span>
         <h4>People Displaced</h4>
       </div>
       <div>
-        <span class="counter" data-target="4">0</span>
+        <span class="counter" data-target="12">0</span>
         <h4>People Died</h4>
       </div>
     </div>
@@ -84,17 +84,17 @@
       <div id="map"></div>
       <script>
         var locations = [
-        ['loan 1', -71.93, -39.42, 'address 1'],
-        ['Bezymianny Volcano, Russia', 160.595, 55.972, 'address 2'],
-        ['Cotopaxi Volcano, Ecuador', -78.436, -0.677, 'address 3'],
-        ['Langila Volcano, Papua New Guinea', 148.42, -5.525, 'address 4'],
-        ['Kerinci Volcano, Indonesia', 101.264, 1.697, 'address 5']
+        ['Villarica Volcano', -71.93, -39.42, 'Chile'],
+        ['Bezymianny Volcano', 160.595, 55.972, 'Russia'],
+        ['Cotopaxi Volcano', -78.436, -0.677, 'Ecuador'],
+        ['Langila Volcano', 148.42, -5.525, 'Papua New Guinea'],
+        ['Kerinci Volcano', -101.264, 1.697, 'Indonesia']
         ];
 
         function initMap(){
           var options ={
-            zoom: 8,
-            center: {lat: 28.7041, lng: 77.1025}
+            zoom: 2,
+            center: {lat: 28.651952, lng: 77.231495}
           }
   
           var map = new google.maps.Map(document.getElementById('map'), options);
@@ -118,7 +118,7 @@ for (i = 0; i < locations.length; i++) {
     });
     map.setCenter(marker.getPosition())
 
-    var content = "Name: " + loan + '</h3>' + "Address: " + add
+    var content = "Name: " + loan + '</h3>' + " Location: " + add
 
     var infowindow = new google.maps.InfoWindow()
 
@@ -135,7 +135,7 @@ return function() {
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG4-EqQJ4rtfkchyMA7LMjm-yVhdbeA0I&callback=initMap">
       </script>
       </section>
-    
+
     <footer>
       <ul>
         <li>DailyTracker &copy; 2022</li>

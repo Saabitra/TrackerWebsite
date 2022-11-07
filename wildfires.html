@@ -65,15 +65,15 @@
 
     <div class="stats">
       <div>
-        <span class="counter" data-target="3">0</span>
+        <span class="counter" data-target="27">0</span>
         <h4>Houses Damaged</h4>
       </div>
       <div>
-        <span class="counter" data-target="7">0</span>
+        <span class="counter" data-target="976">0</span>
         <h4>People Displaced</h4>
       </div>
       <div>
-        <span class="counter" data-target="4">0</span>
+        <span class="counter" data-target="12">0</span>
         <h4>People Died</h4>
       </div>
     </div>
@@ -84,16 +84,16 @@
       <div id="map"></div>
       <script>
         var locations = [
-        ['loan 1', 33.890542, 151.274856, 'address 1'],
-        ['loan 2', 33.923036, 151.259052, 'address 2'],
-        ['loan 3', 34.028249, 151.157507, 'address 3'],
-        ['loan 4', 33.80010128657071, 151.28747820854187, 'address 4'],
-        ['loan 5', 33.950198, 151.259302, 'address 5']
+        ['Nakia Creek Fire', -122.28100000000001, 45.695999999999998, 'Nakia Creek'],
+        ['Bovee Fire', -100.31, 41.869, 'Bovee'],
+        ['Siouxon Fire', -122.089, 45.944000000000003, 'Siouxon'],
+        ['Bolt Creek Fire', -121.346, 47.728000000000002, 'Bolt Creek'],
+        ['Eagle Creek Fire', -109.682, 48.139000000000003, 'Eagle Creek']
         ];
 
         function initMap(){
           var options ={
-            zoom: 8,
+            zoom: 2,
             center: {lat: 28.7041, lng: 77.1025}
           }
   
@@ -118,7 +118,7 @@ for (i = 0; i < locations.length; i++) {
     });
     map.setCenter(marker.getPosition())
 
-    var content = "Loan Number: " + loan + '</h3>' + "Address: " + add
+    var content = "Name: " + loan + '</h3>' + " Location: " + add
 
     var infowindow = new google.maps.InfoWindow()
 
