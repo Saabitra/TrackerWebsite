@@ -15,3 +15,7 @@ Tracks all types of natural calamities around the globe
 * CSS
 * JAVASCRIPT
 * NASA EONET API
+
+
+## Beta build of the website
+https://tracker-website-beta.vercel.app/
