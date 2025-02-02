@@ -182,7 +182,10 @@ return function() {
             });
             map.setCenter(marker.getPosition());
       
-            var content = "Name: " + loan + '</h3>' + " Location: " + add + " Unit: " + velo + '</h3>';
+            var content = `<div style="color: black;">
+                <p><strong>Name:</strong> ${loan}</p>
+                <p><strong>Location:</strong> ${add}</p>
+                </div>`;
       
             var infowindow = new google.maps.InfoWindow();
       
